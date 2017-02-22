@@ -6,6 +6,7 @@
 folds and average the results. The model is trained on `n - 1 ` folds each time and validated over the last fold. If the
 number of validation examples is low, it is better to use cross-validation. Otherwise, single 10-50% validation split is
 preferred.
+![](/crossval.jpeg)
 
 ## Neural networks
 
