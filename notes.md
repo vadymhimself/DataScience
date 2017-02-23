@@ -1,5 +1,23 @@
 # Machine Learning
 
+## Models
+
+### Classification
+
+* Nearest Neighbor. Based on the distances between example and training data set. The closest training example votes for
+the class of the test example. May be based on `L1` or `L2` distances, etc. Shows good accuracy when data is 
+low-dimensional. No training required. Computationally expensive at the test time. 
+* K-Nearest Neighbor. `k` closest training examples vote for the class of the test example.
+    
+    Applying kNN in practice:
+    * Normalize the features to have zero mean and unit variance. 
+    * If data is very high-dimensional, consider using a dimensionality reduction technique such as PCA 
+    or even Random Projections.
+    * If kNN classifier is running too long, consider using an Approximate Nearest Neighbor library (e.g. FLANN) 
+    to accelerate the retrieval (at cost of some accuracy).
+
+## Model validation & evaluation
+
 ### Validation
 
 1. Cross-validation. Splitting training data into `n` folds in order to validate the model's accuracy on the different
