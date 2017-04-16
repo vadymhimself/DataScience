@@ -56,11 +56,17 @@ preferred.
 
 ### Activations
 1. Perceptron - the activation is whether 0 or 1
-![](/img/perceptron.png)
+    
+    ![](/img/perceptron.png =250x)
+    
 2. Sigmoid - 1 / (1 + exp(-z)) [0; 1]
-![](/img/sigmoid.png)
+
+    ![](/img/sigmoid.png =250x)
+    
 3. Tanch - (1+tanh(z/2))/2 [-1; 1] Allows negative activations. May perform better if model has negative inputs
-![](/img/sigmoid.png)
+    
+    ![](/img/sigmoid.png =250x)
+    
 4. ReLU - max(0, z). - Never saturates while z>0. Stops learning if z<0. Known to perform better in image classification.
     
     Advantages:
@@ -77,6 +83,8 @@ preferred.
     * Non-zero centered
     * Unbounded : Could potentially blow up.
     * Dying Relu problem: Relu neurons can sometimes be pushed into states in which they become inactive for essentially all inputs. In this state, no gradients flow backward through the neuron, and so the neuron becomes stuck in a perpetually inactive state and "dies." In some cases, large numbers of neurons in a network can become stuck in dead states, effectively decreasing the model capacity. This problem typically arises when the learning rate is set too high.
-![](/img/relu.png)
+    
+    ![](/img/relu.png = 250x)
+    
 5. Softplus - A smooth approximation to the rectifier. f(x)=ln(1+e^x)
 
