@@ -28,6 +28,16 @@ For discrete random variable
 
 Variance is the square of the **standard deviation**.
 
+### Standard deviation
+
+Standard deviation is a measure of dispersion in data. The standard deviation of a random variable, statistical 
+population, data set, or probability distribution is the square root of its variance. 
+A useful property of the standard deviation is that, unlike the variance, it is expressed in the same units as the data.
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/6d5e98f44504dd173af145ff80cda7cfd80d3050)
+
+## Distributions
+
 # Machine Learning
 
 ## Models
