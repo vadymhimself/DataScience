@@ -16,6 +16,18 @@ then the expected value can be computed as
 Calculating the expected value of a random variable is similar to finding the mean of the whole possible
 values of the variable (even if it is infinite).
 
+### Variance
+In probability variance is an expectation of the squared deviation of random variable X from its mean (expected value)
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/ce1b41598b8e8f45f57c1550ebb8d5c7ab8e1210).
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/55622d2a1cf5e46f2926ab389a8e3438edb53731)
+
+For discrete random variable
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/2577f2b00102ca127d8867a756b85e17d97eab5f)
+
+Variance is the square of the **standard deviation**.
+
 # Machine Learning
 
 ## Models
