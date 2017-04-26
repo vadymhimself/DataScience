@@ -1,8 +1,7 @@
 # Statistics
 ## Probability
 ### Expected Value (expectation, mathematical expectation, EV, average, mean value, mean, or first moment)
-Arithmetic mean of all the values of the random variable **almost surely** converges to the expected
-value if the number of repetitions approaches to infinity.
+Arithmetic mean of all the values of the random variable eventually converges to the expected value.
 
 **Univariate discrete random variable**
 
@@ -38,6 +37,8 @@ A useful property of the standard deviation is that, unlike the variance, it is 
 
 ## Distributions
 
+### Normal distribution
+
 # Machine Learning
 
 ## Models
@@ -67,6 +68,22 @@ preferred.
 ![](/img/crossval.jpeg)
 
 ## Neural networks
+
+### Layers
+
+#### Embedding
+Embedding layer represents each instance of the input population as a vector in the output dimension.
+```
+W("cat")=(0.2, -0.4, 0.7, ...) 
+W("mat")=(0.0, 0.6, -0.1, ...)
+```
+These vectors are the optimization parameters of the layer. 
+An interesting side-effect of the embedding is that the layer can learn complex relationships between instances of the 
+input population.
+
+<img src="/img/embedding.png" width="400">
+
+*t-SNE visualization of the embedding space*
 
 ### Optimizers
 1. Gradient descent - first-order optimization algorithm to find a local minimum of the function. Based on taking iterative steps towards the opposite direction of the function's gradient at the current position.
