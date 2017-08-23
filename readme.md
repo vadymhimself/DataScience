@@ -39,10 +39,25 @@ A useful property of the standard deviation is that, unlike the variance, it is 
 
 ### Normal distribution
 
-# Machine Learning
+## Statistical Models
 
-## Models
+### Regression
 
+#### Simple Linear Regression
+
+Simple linear model estimates the relation between the dependent and independent variables as a straight line.
+Simple linear regression model says that the observed value of `x` differs from its population mean `μ` by 
+an amount equal to `ε`. Here `ε` is an **error term**  which describes the effect on `y` of all factors other than 'x'.
+
+![](/img/lin_reg.gif)
+
+Here 
+
+1. ![](/img/lin_reg_line_of_means.gif) is the mean value of the dependent variable `y` when the value of
+the independent variable is `x`.
+2. Beta-zero zero is the **y-intercept**. Beta-zero is the mean value of `y` when `x` is equal to 0.
+3. Beta-one is the **slope**. Beta-one is the change in the mean value of `y` with an increase of `x`.
+4. `ε` is an **error term**  which describes the effect on `y` of all factors other than `x`.
 ### Classification
 
 * Nearest Neighbor. Based on the distances between example and training data set. The closest training example votes for
