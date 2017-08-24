@@ -45,32 +45,57 @@ A useful property of the standard deviation is that, unlike the variance, it is 
 
 #### Simple Linear Regression
 
+![](/img/lin_reg_plot.png)
+
 Simple linear model estimates the relation between the dependent and independent variables as a straight line.
 Simple linear regression model says that the observed value of `x` differs from its population mean `μ` by 
-an amount equal to `ε`. Here `ε` is an **error term**  which describes the effect on `y` of all factors other than 'x'.
+an amount equal to `ε`. Here `ε` is an **error term**  which describes the effect on `y` of all factors other than `x`.
 
 ![](/img/lin_reg.gif)
 
 Here 
 
-1. ![](/img/lin_reg_line_of_means.gif) is the mean value of the dependent variable `y` when the value of
+1. ![](/img/mu_y_given_x_lin_reg.gif) is the mean value of the dependent variable `y` when the value of
 the independent variable is `x`.
 2. Beta-zero zero is the **y-intercept**. Beta-zero is the mean value of `y` when `x` is equal to 0.
 3. Beta-one is the **slope**. Beta-one is the change in the mean value of `y` with an increase of `x`.
 4. `ε` is an **error term**  which describes the effect on `y` of all factors other than `x`.
+
+Simple linear regression model has to make several assumptions about the error term `ε`.
+
+Given the population of potential errors at an exact value of `X`.
+1. The population has mean 0.
+2. The population has variance ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/53a5c55e536acf250c1d3e0f754be5692b843ef5)
+which is constant for any value of `X`
+3. The population is distributed normally.
+4. Any value of the error term `ε` is statistically independent from other values.
+
+These assumptions imply that since the error term `ε` is distributed normally 
+and independent from any other values, the ![](/img/mu_y_given_x_lin_reg.gif) 
+itself is distributed normally.
+
+##### Least squares point estimates (LSPE)
+
+LSPE technique allows to estimate beta-zero and beta-one values by minimizing the
+sum of the squared distances between `Y` and ![](/img/mu_y_given_x_lin_reg.gif). 
+
+
 ### Classification
 
-* Nearest Neighbor. Based on the distances between example and training data set. The closest training example votes for
+#### Nearest Neighbor 
+Based on the distances between example and training data set. The closest training example votes for
 the class of the test example. May be based on `L1` or `L2` distances, etc. Shows good accuracy when data is 
 low-dimensional. No training required. Computationally expensive at the test time. 
-* K-Nearest Neighbor. `k` closest training examples vote for the class of the test example.
+
+#### K-Nearest Neighbor
+`k` closest training examples vote for the class of the test example.
     
-    Applying kNN in practice:
-    * Normalize the features to have zero mean and unit variance. 
-    * If data is very high-dimensional, consider using a dimensionality reduction technique such as PCA 
-    or even Random Projections.
-    * If kNN classifier is running too long, consider using an Approximate Nearest Neighbor library (e.g. FLANN) 
-    to accelerate the retrieval (at cost of some accuracy).
+Applying kNN in practice:
+* Normalize the features to have zero mean and unit variance. 
+* If data is very high-dimensional, consider using a dimensionality reduction technique such as PCA 
+or even Random Projections.
+* If kNN classifier is running too long, consider using an Approximate Nearest Neighbor library (e.g. FLANN) 
+to accelerate the retrieval (at cost of some accuracy).
 
 ## Model validation & evaluation
 
