@@ -79,6 +79,8 @@ itself is distributed normally.
 LSPE technique allows to estimate beta-zero and beta-one values by minimizing the
 sum of the squared distances between `Y` and ![](/img/mu_y_given_x_lin_reg.gif). 
 
+*In simple words, the MSE error ![](/img/lse.png) of the least squares prediction function
+![](/img/least_squared_pred_equation.gif) is minimized in regards to parameters `b0` and `b1`*
 
 ### Classification
 
