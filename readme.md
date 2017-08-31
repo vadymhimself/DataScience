@@ -39,6 +39,19 @@ A useful property of the standard deviation is that, unlike the variance, it is 
 
 ### Normal distribution
 
+## Data Visualization
+
+### Box plot
+
+The simplest possible box plot displays the full range of variation (from min to max), the likely range of variation (the IQR), and a typical value (the median). Not uncommonly real datasets will display surprisingly high maximums or surprisingly low minimums called outliers. John Tukey has provided a precise definition for two types of outliers:
+
+* Outliers are either 3×IQR (inter quartile range) or more above the third quartile or 3×IQR or more below the first quartile.
+* Suspected outliers are are slightly more central versions of outliers: either 1.5×IQR or more above the third quartile or 1.5×IQR or more below the first quartile.
+If either type of outlier is present the whisker on the appropriate side is taken to 1.5×IQR from the quartile (the "inner fence") rather than the max or min, and individual outlying data points are displayed as unfilled circles (for suspected outliers) or filled circles (for outliers). (The "outer fence" is 3×IQR from the quartile.)
+
+![](http://www.physics.csbsju.edu/stats/complex.box.defs.gif)
+
+
 ## Statistical Models
 
 ### Regression
@@ -66,7 +79,7 @@ Simple linear regression model has to make several assumptions about the error t
 Given the population of potential errors at an exact value of `X`.
 1. The population has mean 0.
 2. The population has variance ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/53a5c55e536acf250c1d3e0f754be5692b843ef5)
-which is constant for any value of `X`
+which is constant for any value of `X`.
 3. The population is distributed normally.
 4. Any value of the error term `ε` is statistically independent from other values.
 
@@ -80,7 +93,7 @@ LSPE technique allows to estimate beta-zero and beta-one values by minimizing th
 sum of the squared distances between `Y` and ![](/img/mu_y_given_x_lin_reg.gif). 
 
 *In simple words, the MSE error ![](/img/lse.png) of the least squares prediction function
-![](/img/least_squared_pred_equation.gif) is minimized in regards to parameters `b0` and `b1`*
+![](/img/least_squared_pred_equation.gif) is minimized in regards to parameters `b0` and `b1`.*
 
 ### Classification
 
